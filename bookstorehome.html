@@ -38,6 +38,27 @@
         a :hover {
             color: black;
         }
+        @keyframes pulse {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.button {
+  background-color: #c9cc2e;
+  color: rgb(7, 139, 55);
+  border: none;
+  border-radius: 5px;
+  animation: pulse 1.3s infinite;
+}
+
+
     </style>
 </head>
 
@@ -54,8 +75,9 @@
     <div><a href="bookstore.html">
             <h1>logout</h1>
         </a>
-        &nbsp; &nbsp; &nbsp; &nbsp;
-        <a><h1>30 days free trial</h1></a>
+        
+        <a href="bookstorebiodata.html"><h1>about</h1></a>
+        <a><h1 class="button">30 days free trial</h1></a>
     </div>
 
     <h2 style="font-size: 40px;">science fiction</h2>
