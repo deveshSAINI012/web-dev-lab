@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Numbers</title>
+    <script>
+        function compareNumbers() {
+            var num1 = parseInt(prompt("Enter the first integer:"));
+            var num2 = parseInt(prompt("Enter the second integer:"));
+
+            var result;
+            if (num1 > num2) {
+                result = "The first number (" + num1 + ") is greater than the second number (" + num2 + ")";
+            } else if (num2 > num1) {
+                result = "The second number (" + num2 + ") is greater than the first number (" + num1 + ")";
+            } else {
+                result = "The two numbers (" + num1 + ") are equal";
+            }
+
+            alert(result);
+        }
+    </script>
+</head>
+<body>
+    <h1>Compare Numbers</h1>
+    <button onclick="compareNumbers()">Compare</button>
+</body>
+</html>
