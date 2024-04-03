@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Five Integers</title>
+    <script>
+        function sumWithWhile() {
+            var sum = 0;
+            var count = 0;
+
+            while (count < 5) {
+                var num = parseInt(prompt("Enter an integer number:"));
+                sum += num;
+                count++;
+            }
+
+            document.getElementById("resultWhile").innerHTML = "Sum using while loop: " + sum;
+        }
+
+        function sumWithFor() {
+            var sum = 0;
+
+            for (var i = 0; i < 5; i++) {
+                var num = parseInt(prompt("Enter an integer number:"));
+                sum += num;
+            }
+
+            document.getElementById("resultFor").innerHTML = "Sum using for loop: " + sum;
+        }
+    </script>
+</head>
+<body>
+    <h1>Sum of Five Integers</h1>
+    <button onclick="sumWithWhile()">Calculate Sum with While Loop</button>
+    <button onclick="sumWithFor()">Calculate Sum with For Loop</button>
+    <div id="resultWhile"></div>
+    <div id="resultFor"></div>
+</body>
+</html>
